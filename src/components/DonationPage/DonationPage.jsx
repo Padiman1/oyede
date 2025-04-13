@@ -5,9 +5,9 @@ const DonationPage = () => {
   const [donationAmount, setDonationAmount] = useState(50); // Default to 50€
   const [customAmount, setCustomAmount] = useState("");
   const [personalInfo, setPersonalInfo] = useState({
-    firstName: "Ikenna",
-    lastName: "Ibeneme",
-    email: "ikennaibenemee@gmail.com",
+    firstName: "",
+    lastName: "",
+    email: "",
   });
 
   const handleDonationAmountChange = (amount) => {
@@ -18,6 +18,14 @@ const DonationPage = () => {
   const handleCustomAmountChange = (e) => {
     setCustomAmount(e.target.value);
     setDonationAmount(e.target.value); // Update donation amount with custom value
+  };
+
+  const handlePersonalInfoChange = (e) => {
+    const { id, value } = e.target;
+    setPersonalInfo((prevInfo) => ({
+      ...prevInfo,
+      [id]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -81,7 +89,8 @@ const DonationPage = () => {
                   type="text"
                   id="firstName"
                   value={personalInfo.firstName}
-                  readOnly
+                  onChange={handlePersonalInfoChange}
+                  placeholder="Enter your first name"
                 />
               </div>
               <div className="form-row">
@@ -90,7 +99,8 @@ const DonationPage = () => {
                   type="text"
                   id="lastName"
                   value={personalInfo.lastName}
-                  readOnly
+                  onChange={handlePersonalInfoChange}
+                  placeholder="Enter your last name"
                 />
               </div>
               <div className="form-row">
@@ -99,7 +109,8 @@ const DonationPage = () => {
                   type="email"
                   id="email"
                   value={personalInfo.email}
-                  readOnly
+                  onChange={handlePersonalInfoChange}
+                  placeholder="Enter your email"
                 />
               </div>
             </div>
