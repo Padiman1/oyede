@@ -1,0 +1,153 @@
+/* Reset + Base */
+
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+/* Donate Button */
+.donate-btn {
+    padding: 12px 16px;
+    background-color: #ff0000;
+    color: #fff !important;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background-color: #ff0000;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    z-index: 1100;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+.active-link {
+    color: #ff0000; /* Apply red color to active route */
+}
+
+/* Customize Donate button */
+.donate-btn.active-link {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .backdrop {
+        position: fixed;
+        top: 0px;
+        /* navbar height */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #00000045;
+        z-index: 900;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 12px 24px;
+        animation: slideIn 0.3s ease forwards;
+        z-index: 1000;
+        padding-top: 120px;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .nav-links a {
+        margin: 8px 0;
+        font-size: 16px;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .donate-btn {
+
+        margin-top: 10px;
+        padding: 16px 24px;
+        border-radius: 120px;
+    }
+}

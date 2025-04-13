@@ -1,0 +1,121 @@
+.our-team {
+    background-color: #f4f4f4;
+    color: #030928;
+    padding: 80px 20px;
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+.section-header-teams {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #000;
+    padding: 4px 12px;
+
+}
+
+.section-paragraph-teams {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.03);
+}
+
+.team-member-image {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+
+.team-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+
+}
+
+
+.team-member-info {
+    padding: 20px;
+}
+
+.team-member-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.team-member-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666666;
+}
+
+.team-member-info a {
+    display: inline-block;
+    color: #0075ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-member-info a:hover {
+    text-decoration: underline;
+}
+
+/* Bio overlay styles */
+.team-member-bio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.team-member-image:hover+.team-member-bio,
+.team-member:focus-within .team-member-bio {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .section-header-teams {
+        font-size: 36px;
+    }
+
+    .section-paragraph-teams {
+        font-size: 18px;
+    }
+
+
+}

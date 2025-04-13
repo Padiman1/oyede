@@ -1,0 +1,105 @@
+.meeting-projects-page {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 64px;
+    justify-content: space-between;
+}
+
+.normal-direction {
+    flex-direction: row;
+}
+
+.reverse-direction {
+    flex-direction: row-reverse;
+}
+
+.section-image {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.section-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.bold-title {
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #cc0000;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    padding: 16px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.outline-btn:hover {
+    background-color: #ffe6e6;
+}
+
+@media (max-width: 768px) {
+    .section-flex {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .section-image {
+        width: 100%;
+    }
+
+    .text-content {
+        text-align: left;
+    }
+}

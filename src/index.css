@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap'); */
+
+/* Root Variables */
+:root {
+  --primary-font: 'Plus Jakarta Sans', sans-serif;
+  /* --secondary-font: 'Podkova', serif; */
+  --secondary-font: 'Plus Jakarta Sans', sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --primary-color: #515FDF;
+  --secondary-color: #f0a500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}

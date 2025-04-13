@@ -1,0 +1,117 @@
+.contact-us-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 140px;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.contact-info {
+    width: 45%;
+
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-form {
+    width: 45%;
+    padding-left: 20px;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 32px;
+}
+
+.contact-form .form-row input:first-child {
+    margin-right: 4%;
+    /* Add space between first and last name fields */
+}
+
+.form-row input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cta-button {
+    border: none;
+    border-radius: 4px;
+
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .contact-us-page {
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        padding-top: 120px;
+        flex-direction: column;
+
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        gap: 48px
+    }
+
+    .contact-form {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        width: 100%;
+
+    }
+}

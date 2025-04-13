@@ -1,0 +1,36 @@
+.blog-hero {
+  position: relative;
+  background: url('../../assets/activities4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Enables the parallax effect */
+  background-position: center center;
+  /* Moves the image up by 65px */
+  height: 90vh;
+  /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Ensure no overflow issues */
+}
+
+.blog-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.47);
+  /* Semi-transparent overlay */
+}
+
+.blog-hero-title {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  z-index: 1;
+  font-family: var(--secondary-font);
+}

@@ -1,0 +1,125 @@
+.activities-page {
+    padding: 96px 20px;
+    background: #FFECDB;
+    text-align: center;
+    margin-top: 48px
+}
+
+.activities-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    /* Primary red */
+    margin-bottom: 8px;
+}
+
+.activities-sub {
+    font-size: 16px;
+    margin-bottom: 64px;
+    color: #666;
+}
+
+.mark-event-btn {
+    margin-bottom: 32px;
+    padding: 12px 24px;
+    background-color: #ff0000;
+    /* Primary red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mark-event-btn:hover {
+    background-color: #cc0000;
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.event-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+.event-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 16px;
+}
+
+.event-details h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #000;
+    /* Primary red */
+    text-align: left;
+}
+
+.event-details p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .event-card {
+        width: 70vw;
+    }
+    .activities-page {
+        padding: 48px 16px;
+        background: #FFECDB;
+        text-align: center;
+        margin-top: 24px
+    }
+    
+    .activities-sub {
+        font-size: 14px;
+        margin-bottom: 24px;
+        color: #666;
+    }
+    
+    .activities-heading {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        /* Primary red */
+        margin-bottom: 8px;
+    }
+
+    .scroll-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+}

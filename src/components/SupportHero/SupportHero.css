@@ -1,0 +1,70 @@
+.support-hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .support-hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: 1;
+  }
+  
+  .support-hero-overlay {
+    background-color: #121212;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .support-hero-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .support-hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .support-hero-donate-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .support-hero-donate-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  @media (max-width: 768px) {
+    .support-hero-title {
+      font-size: 24px;
+    }
+  
+    .support-hero-description {
+      font-size: 14px;
+    }
+  }
