@@ -31,7 +31,7 @@ const DonationPage = () => {
       <div className="donation-container">
         <h2>Make a Donation</h2>
         <p>
-          To make offline donations to the Igbo Community Cultural Heritage
+          To make offline donations to the Oyede Community Cultural Heritage
           Center, please fill out the form and state the amount you are paying.
           You can donate by mail, Zelle, or direct deposit.
         </p>
