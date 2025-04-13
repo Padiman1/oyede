@@ -8,7 +8,7 @@ const ChairmanMessage = () => {
   return (
     <div>
       <BlogHero title={"ABOUT US"} />
-      <AboutUs showCta={false} />
+
       <div className="chairman-page">
         <div className="chairman-container">
           <h2 className="chairman-title">Message from the Chairman</h2>
@@ -39,6 +39,7 @@ const ChairmanMessage = () => {
         </div>
       </div>
       <OurTeam />
+      <AboutUs showCta={false} />
     </div>
   );
 };

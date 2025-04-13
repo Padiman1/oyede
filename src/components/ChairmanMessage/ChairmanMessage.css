@@ -1,44 +1,63 @@
 .chairman-page {
-    padding: 80px 20px 60px;
+  padding: 80px 20px 60px;
+  background-color: #FFECDB;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #121212;
+  text-align: center;
+}
+
+.chairman-header {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.chairman-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.chairman-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.chairman-text {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.chairman-signature {
+  font-size: 16px;
+  margin-top: 40px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .chairman-page {
+    padding: 80px 12px;
     background-color: #FFECDB;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #121212;
     text-align: center;
   }
-  
-  .chairman-header {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
+
   .chairman-container {
     max-width: 800px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 16px;
     border-radius: 20px;
     text-align: left;
   }
-  
-  .chairman-title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    text-align: left;
-  }
-  
-  .chairman-text {
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-  
-  .chairman-signature {
-    font-size: 16px;
-    margin-top: 40px;
-    line-height: 1.6;
-    text-align: left;
-  }
+}

@@ -30,7 +30,7 @@ const OyedeUnionActivities = () => {
   return (
     <section className="activities-page">
       <h2 className="activities-heading">
-        Oyede Union <span style={{ color: "#ff0000" }}>Activities</span>
+        Oyede Union <span style={{ color: "" }}>Activities</span>
       </h2>
       <p className="activities-sub">
         Preserving Culture, Strengthening Community

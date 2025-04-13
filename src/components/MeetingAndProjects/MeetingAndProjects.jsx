@@ -6,14 +6,14 @@ import projectsImg from "../../../assets/congress1.jpg"; // Replace with your ac
 const MeetingAndProjects = () => {
   return (
     <div className="about-page">
-      {/* 📝 Meeting Updates */}
+
       <section className="about-section">
         <div className="about-image">
           <img src={meetingImg} alt="Who We Are" />
         </div>
 
         <div className="about-text">
-          <h2 className="section-heading">📝 Meeting Updates</h2>
+          <h2 className="section-heading">Meeting Updates</h2>
           <p className="section-subtitle">Recent Meeting Highlights</p>
           <p className="bold-title">March 2025 General Meeting</p>
           <p>
@@ -37,13 +37,13 @@ const MeetingAndProjects = () => {
         </div>
       </section>
 
-      {/* 🚧 Projects */}
+     
       <section
         className="about-section-reverse"
         style={{ backgroundColor: "#fff" }}
       >
         <div className="about-text">
-          <h2 className="section-heading">🚧 Projects</h2>
+          <h2 className="section-heading">Projects</h2>
           <p className="section-subtitle">
             We believe in development through action. Here are some of our
             ongoing and completed projects:
