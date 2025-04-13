@@ -1,41 +1,40 @@
 .donation-page {
-    padding: 40px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     background-color: #fff;
-    padding-top: 160px
-}
-
-.donation-container {
-    width: 80%;
+    padding-top: 160px;
+  }
+  
+  .donation-container {
+    width: 100%;
     max-width: 600px;
-    background: #FFECDB;
+    background: #ffecdb;
     padding: 20px;
     border-radius: 8px;
-
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 32px
-}
-
-.donation-options {
+    margin-top: 32px;
+  }
+  
+  .donation-options {
     margin-bottom: 40px;
-    margin-top: 24px
-}
-
-.amount-buttons {
+    margin-top: 24px;
+  }
+  
+  .amount-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 15px;
-    margin-top: 12px;
     margin-bottom: 40px;
-}
-
-.amount-buttons button {
+  }
+  
+  .amount-buttons button {
+    flex: 1 1 calc(50% - 10px);
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #ff0000;
@@ -44,53 +43,54 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.amount-buttons button:hover {
+    min-width: 100px;
+  }
+  
+  .amount-buttons button:hover {
     background-color: #45a049;
-}
-
-.custom-amount {
+  }
+  
+  .custom-amount {
     margin-bottom: 20px;
-}
-
-.custom-amount input {
+  }
+  
+  .custom-amount input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.personal-info .form-row {
+  }
+  
+  .personal-info .form-row {
     margin-bottom: 15px;
-}
-
-.personal-info label {
+  }
+  
+  .personal-info label {
     font-weight: bold;
     display: block;
-}
-
-.personal-info input {
+  }
+  
+  .personal-info input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.donation-instructions {
+  }
+  
+  .donation-instructions {
     margin-bottom: 20px;
-}
-
-.donation-total {
+  }
+  
+  .donation-total {
     text-align: center;
-}
-
-.donation-total h3 {
+  }
+  
+  .donation-total h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-}
-
-.cta-button {
+  }
+  
+  .cta-button {
     background-color: #ff0000;
     color: white;
     padding: 10px 20px;
@@ -99,8 +99,45 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
+    width: 100%;
+  }
+  
+  .cta-button:hover {
     background-color: #45a049;
-}
+  }
+  
+  /* === Responsive Breakpoints === */
+  
+  @media screen and (max-width: 768px) {
+    .amount-buttons button {
+      flex: 1 1 10%;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+    }
+  
+    .donation-container {
+      padding: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .donation-page {
+      padding: 20px 10px;
+      padding-top: 120px;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
